@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yalcay.camerapp">
+
+    <!-- Kamera izni -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Depolama izni (Eğer Scoped Storage kullanıyorsanız kaldırılabilir) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.Camerapp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- NewStudyActivity -->
+        <activity
+            android:name=".NewStudyActivity"
+            android:exported="true" />
+
+        <!-- StudyActivity -->
+        <activity
+            android:name=".StudyActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

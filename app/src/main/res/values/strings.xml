@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Camerapp</string>
+    <string name="new_study">New Study</string>
+    <string name="calibrate">Calibrate</string> <!-- Eksik kaynak eklendi -->
+    <string name="rgb_to_concentration">RGB to Concentration</string> <!-- Eksik kaynak eklendi -->
+	<string name="capture_photo">Capture Photo</string>
+    <string name="export_to_excel">Export to Excel</string>
+</resources>

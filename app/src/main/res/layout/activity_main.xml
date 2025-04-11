@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface"
+    tools:context=".MainActivity">
+
+    <!-- Modern Material CardView -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/surface_card"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- New Study Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/new_study_button"
+                style="@style/Widget.Camerapp.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/new_study"
+                app:icon="@drawable/ic_add"
+                app:iconGravity="textStart" />
+
+            <!-- Calibrate Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/calibrate_button"
+                style="@style/Widget.Camerapp.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/calibrate"
+                app:icon="@drawable/ic_calibrate"
+                app:iconGravity="textStart" />
+
+            <!-- RGB to Concentration Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rgb_to_concentration_button"
+                style="@style/Widget.Camerapp.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/rgb_to_concentration"
+                app:icon="@drawable/ic_rgb"
+                app:iconGravity="textStart" />
+
+            <!-- Capture Photo Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/capture_photo_button"
+                style="@style/Widget.Camerapp.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/capture_photo"
+                app:icon="@drawable/ic_camera"
+                app:iconGravity="textStart" />
+
+            <!-- Export to Excel Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/export_to_excel_button"
+                style="@style/Widget.Camerapp.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/export_to_excel"
+                app:icon="@drawable/ic_excel"
+                app:iconGravity="textStart" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
