@@ -1,2 +1,1 @@
-# camera
-# camera
+Bu, çakışmadan sonra temizlenmiş içeriktir.
